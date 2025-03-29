@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #072834;
+  --color-primary-2: #284754;
+  --color-base: #fff6ec;
+  --color-secondary: #e2b17d;
+
+  --font-boston: 'Boston Angel', 'sans-serif';
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Bold.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Bold.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Light.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Regular.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Medium.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Light.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel Med';
+  src: url('./fonts/BostonAngel-Medium.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Thin.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Regular.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston Angel';
+  src: url('./fonts/BostonAngel-Thin.woff2') format('woff2'),
+    url('./fonts/BostonAngel-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
