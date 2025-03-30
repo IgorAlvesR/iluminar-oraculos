@@ -4,22 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <script type="module" src="js/index.js" defer></script>
   </head>
   <body class="font-boston">
     <div
       class="h-screen bg-[url(./imgs/fundo.png)] bg-center bg-cover bg-no-repeat"
     >
       <header
-        class="fixed w-full px-6 md:px-8 2xl:px-12 flex items-center justify-between gap-6"
+        class="fixed w-full px-6 md:px-8 2xl:px-12 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-6"
       >
-        <figure>
-          <img class="object-cover h-22" src="./imgs/logotipo-1.png" alt="" />
-        </figure>
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <figure>
+            <img
+              class="object-cover h-18 md:h-22"
+              src="./imgs/logotipo-1.png"
+              alt=""
+            />
+          </figure>
+
+          <div id="menu-mobile" class="md:hidden block cursor-pointer">
+            <img src="icons/menu.svg" class="size-8 text-secondary" alt="" />
+          </div>
+        </div>
 
         <nav
-          class="hidden md:flex font-lato items-center gap-6 lg:gap-8 text-secondary font-semibold"
+          id="nav-menu"
+          class="hidden h-screen md:h-auto md:flex flex-col md:flex-row font-lato items-center gap-12 lg:gap-8 text-secondary font-semibold"
         >
-          <ul class="flex items-center gap-6 lg:gap-8 md:text-lg">
+          <ul
+            class="flex items-center flex-col md:flex-row md:gap-8 gap-12 text-lg"
+          >
             <li class="hover:underline transition-all underline-offset-4">
               <a href="">Tiragens</a>
             </li>
