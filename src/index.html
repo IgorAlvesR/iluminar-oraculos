@@ -1,62 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script type="module" src="js/index.js" defer></script>
   </head>
-  <body class="font-boston">
-    <div
-      class="h-screen bg-[url(./imgs/fundo.png)] bg-center bg-cover bg-no-repeat"
+
+  <body
+    class="font-boston h-screen bg-primary bg-[url(./imgs/fundo.png)] bg-center bg-cover bg-no-repeat space-y-8 md:space-y-12"
+  >
+    <header
+      class="backdrop-blur-md z-50 px-6 md:px-8 fixed w-full 2xl:px-12 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-6"
     >
-      <header
-        class="fixed w-full px-6 md:px-8 2xl:px-12 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-6"
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <figure>
+          <img
+            class="object-cover h-18 md:h-22"
+            src="./imgs/logotipo-1.png"
+            alt=""
+          />
+        </figure>
+
+        <div id="menu-mobile" class="md:hidden block cursor-pointer">
+          <img src="icons/menu.svg" class="size-8 text-secondary" alt="" />
+        </div>
+      </div>
+
+      <nav
+        id="nav-menu"
+        data-open="false"
+        class="transform transition-all duration-300 translate-y-[-500px] md:translate-y-0 h-screen md:h-auto md:flex flex-col md:flex-row font-lato items-center gap-12 lg:gap-8 text-secondary font-semibold"
       >
-        <div class="flex items-center justify-between w-full md:w-auto">
+        <ul
+          class="flex items-center flex-col md:flex-row md:gap-8 gap-12 text-lg"
+        >
+          <li class="hover:underline transition-all underline-offset-4">
+            <a href="#tiragens">Tiragens</a>
+          </li>
+
+          <li class="hover:underline transition-all underline-offset-4">
+            <a href="">Quem sou eu</a>
+          </li>
+
+          <li class="hover:underline transition-all underline-offset-4">
+            <a href="">Contatos</a>
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="px-4 h-12 text-md border border-secondary hover:bg-primary hover:text-secondary hover:border hover:border-secondary transition-all rounded-4xl bg-secondary text-primary flex justify-center items-center"
+        >
+          Agendamento
+        </a>
+      </nav>
+    </header>
+
+    <main
+      class="min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
+    >
+      <h1
+        class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
+      >
+        &#57409; poder das cartas,
+        <span class="block text-secondary">a luz da transformação</span>
+      </h1>
+      <figure
+        class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
+      >
+        <img
+          src="./imgs/logotipo.png"
+          alt=""
+          class="object-cover h-[300px] md:h-[600px]"
+        />
+      </figure>
+    </main>
+
+    <section
+      id="tiragens"
+      class="max-w-7xl mx-auto h-screen scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-6 md:gap-12"
+    >
+      <h1
+        class="text-balance text-4xl sm:text-7xl font-[100] text-secondary text-center"
+      >
+        Tiragem
+      </h1>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 2xl:gap-12"
+      >
+        <div
+          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+        >
           <figure>
             <img
-              class="object-cover h-18 md:h-22"
-              src="./imgs/logotipo-1.png"
-              alt=""
+              src="./imgs/mesa-real.png"
+              alt="Imagem representando mesa real"
+              class="aspect-square"
             />
           </figure>
 
-          <div id="menu-mobile" class="md:hidden block cursor-pointer">
-            <img src="icons/menu.svg" class="size-8 text-secondary" alt="" />
-          </div>
-        </div>
+          <h1 class="text-3xl md:text-4xl text-white">
+            &#57417;esa Real <span class="block">Tiragem Completa</span>
+          </h1>
 
-        <nav
-          id="nav-menu"
-          data-open="false"
-          class="transform transition-transform duration-300 translate-y-[-500px] md:translate-y-0 h-screen md:h-auto md:flex flex-col md:flex-row font-lato items-center gap-12 lg:gap-8 text-secondary font-semibold"
-        >
-          <ul
-            class="flex items-center flex-col md:flex-row md:gap-8 gap-12 text-lg"
-          >
-            <li class="hover:underline transition-all underline-offset-4">
-              <a href="">Tiragens</a>
-            </li>
-
-            <li class="hover:underline transition-all underline-offset-4">
-              <a href="">Quem sou eu</a>
-            </li>
-
-            <li class="hover:underline transition-all underline-offset-4">
-              <a href="">Contatos</a>
-            </li>
-          </ul>
+          <span class="inline-block text-7xl text-secondary">R$ 155</span>
 
           <a
             href="#"
-            class="px-4 h-12 text-md border border-secondary hover:bg-primary hover:text-secondary hover:border hover:border-secondary transition-all rounded-4xl bg-secondary text-primary flex justify-center items-center"
+            class="max-w-2/3 w-full px-4 h-12 text-md border border-secondary hover:bg-primary hover:text-secondary hover:border hover:border-secondary transition-all rounded-4xl bg-secondary text-primary flex justify-center items-center"
           >
-            Agendamento
+            Agendar
           </a>
-        </nav>
-      </header>
-    </div>
-    <main class="bg-primary h-[500px]"></main>
+        </div>
+
+        <div
+          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+        >
+          <figure>
+            <img
+              src="./imgs/caminhos-coracao.png"
+              alt="Imagem representando mesa real"
+              class="aspect-square"
+            />
+          </figure>
+
+          <h1 class="text-3xl md:text-4xl text-white">
+            ergunta
+            <span class="block"> &#57409;bjetiva</span>
+          </h1>
+
+          <span class="inline-block text-7xl text-secondary">R$ 44</span>
+
+          <a
+            href="#"
+            class="max-w-2/3 w-full px-4 h-12 text-md border border-secondary hover:bg-primary hover:text-secondary hover:border hover:border-secondary transition-all rounded-4xl bg-secondary text-primary flex justify-center items-center"
+          >
+            Agendar
+          </a>
+        </div>
+
+        <div
+          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+        >
+          <figure>
+            <img
+              src="./imgs/pergunta-objetiva.png"
+              alt="Imagem representando mesa real"
+              class="aspect-square"
+            />
+          </figure>
+
+          <h1 class="text-3xl md:text-4xl text-white">
+            &#57417;esa Real <span class="block">Tiragem Completa</span>
+          </h1>
+
+          <span class="inline-block text-7xl text-secondary">R$ 33</span>
+
+          <a
+            href="#"
+            class="max-w-2/3 w-full px-4 h-12 text-md border border-secondary hover:bg-primary hover:text-secondary hover:border hover:border-secondary transition-all rounded-4xl bg-secondary text-primary flex justify-center items-center"
+          >
+            Agendar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-screen w-full"></div>
   </body>
 </html>
