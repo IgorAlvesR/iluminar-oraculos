@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script type="module" src="js/index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scroll.js" defer></script>
   </head>
 
   <body
     class="font-boston h-screen bg-primary bg-[url(./imgs/fundo.png)] bg-center bg-cover bg-no-repeat space-y-8 md:space-y-12"
   >
     <header
-      class="backdrop-blur-md z-50 px-6 md:px-8 fixed w-full 2xl:px-12 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-6"
+      class="max-h-[88px] backdrop-blur-md z-50 px-6 md:px-8 fixed w-full 2xl:px-12 flex items-center justify-between flex-col md:flex-row"
     >
       <div class="flex items-center justify-between w-full md:w-auto">
         <figure>
@@ -30,7 +32,7 @@
       <nav
         id="nav-menu"
         data-open="false"
-        class="transform transition-all duration-300 translate-y-[-500px] md:translate-y-0 h-screen md:h-auto md:flex flex-col md:flex-row font-lato items-center gap-12 lg:gap-8 text-secondary font-semibold"
+        class="py-6 transform transition-all duration-300 translate-y-[-500px] md:translate-y-0 h-0 md:h-auto md:flex flex-col md:flex-row font-lato items-center gap-12 lg:gap-8 text-secondary font-semibold"
       >
         <ul
           class="flex items-center flex-col md:flex-row md:gap-8 gap-12 text-lg"
@@ -58,16 +60,18 @@
     </header>
 
     <main
+      id="main"
       class="min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
     >
       <h1
-        class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
+        class="main-title text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
       >
         &#57409; poder das cartas,
         <span class="block text-secondary">a luz da transformação</span>
       </h1>
+
       <figure
-        class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
+        class="main-image max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
       >
         <img
           src="./imgs/logotipo.png"
@@ -79,19 +83,19 @@
 
     <section
       id="tiragens"
-      class="max-w-7xl mx-auto h-screen scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-6 md:gap-12"
+      class="max-w-7xl mx-auto h-screen scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-8 md:gap-12"
     >
       <h1
-        class="text-balance text-4xl sm:text-7xl font-[100] text-secondary text-center"
+        class="price-title text-balance text-4xl sm:text-7xl font-[100] text-secondary text-center"
       >
         Tiragem
       </h1>
 
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 2xl:gap-12"
+        class="price-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 2xl:gap-12"
       >
         <div
-          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+          class="sticky sm:static top-[100px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
         >
           <figure>
             <img
@@ -116,7 +120,7 @@
         </div>
 
         <div
-          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+          class="sticky sm:static top-[100px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
         >
           <figure>
             <img
@@ -142,7 +146,7 @@
         </div>
 
         <div
-          class="sticky sm:static top-[88px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
+          class="sticky sm:static top-[100px] bg-primary border border-secondary rounded-md p-6 text-center inline-flex flex-col items-center gap-6"
         >
           <figure>
             <img
@@ -168,6 +172,6 @@
       </div>
     </section>
 
-    <div class="h-screen w-full"></div>
+    <div class="h-[2000px] w-full"></div>
   </body>
 </html>
