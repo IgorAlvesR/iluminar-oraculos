@@ -175,17 +175,26 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .top-\[88px\] {
     top: 88px;
   }
   .top-\[100px\] {
     top: 100px;
+  }
+  .top-\[200px\] {
+    top: 200px;
   }
   .z-50 {
     z-index: 50;
@@ -226,9 +235,6 @@
   }
   .h-18 {
     height: calc(var(--spacing) * 18);
-  }
-  .h-\[88px\] {
-    height: 88px;
   }
   .h-\[300px\] {
     height: 300px;
@@ -511,11 +517,6 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:inline-flex {
-    @media (width >= 48rem) {
-      display: inline-flex;
     }
   }
   .md\:h-22 {
