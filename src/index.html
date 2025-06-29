@@ -2,21 +2,19 @@
 <html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="O poder das cartas,
+    a luz da transformação"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script type="module" src="js/index.js" defer></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./js/scroll.js" defer></script>
   </head>
 
   <body
     class="font-boston h-screen bg-primary space-y-24 md:space-y-32 lg:space-y-48"
   >
-    <img
-      src="./imgs/fundo.png"
-      class="top-[100px] absolute min-h-screen inset-0 object-cover"
-      alt=""
-    />
     <header
       class="max-h-[88px] backdrop-blur-md z-50 px-6 md:px-8 fixed w-full 2xl:px-12 flex items-center justify-between flex-col md:flex-row"
     >
@@ -66,17 +64,17 @@
 
     <main
       id="main"
-      class="min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
+      class="bg-[url(./imgs/fundo.png)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
     >
       <h1
-        class="main-title text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
+        class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
       >
         &#57409; poder das cartas,
         <span class="block text-secondary">a luz da transformação</span>
       </h1>
 
       <figure
-        class="main-image max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
+        class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
       >
         <img
           src="./imgs/logotipo.png"
@@ -86,15 +84,16 @@
       </figure>
     </main>
 
+    <!-- Tiragem -->
     <section
       id="tiragens"
       class="max-w-7xl mx-auto scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-8 md:gap-12"
     >
-      <h1
+      <h2
         class="price-title text-balance text-5xl sm:text-7xl font-[100] text-secondary text-center"
       >
         Tiragem
-      </h1>
+      </h2>
 
       <div
         class="w-full price-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 2xl:gap-12"
@@ -183,15 +182,16 @@
       </div>
     </section>
 
+    <!-- Quem sou eu -->
     <section
       id="quem-sou-eu"
       class="max-w-7xl mx-auto scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-8 md:gap-12"
     >
-      <h1
-        class="quem-sou-eu__titulo price-title text-balance text-5xl sm:text-7xl font-[100] text-secondary text-center"
+      <h2
+        class="price-title text-balance text-5xl sm:text-7xl font-[100] text-secondary text-center"
       >
         Quem sou eu ?
-      </h1>
+      </h2>
 
       <div
         class="flex flex-col items-center lg:items-start lg:flex-row gap-12 lg:gap-20 font-lato text-white"
@@ -202,34 +202,105 @@
           class="quem-sou-eu__img object-cover lg:max-w-1/2 w-full sm:w-auto rounded-[40px] max-h-[600px]"
         />
 
-        <div class="text-md md:text-2xl quem-sou-eu__conteudo">
-          <p>
-            Sou Thayane Silvestri, taróloga, oraculista e apaixonada por
-            desvendar os mistérios da alma. Ao longo dos anos, senti uma forte
-            conexão com o universo espiritual e, em um certo tempo transformei
-            esse dom em uma missão: ajudar pessoas a encontrarem clareza,
-            propósito e direcionamento através dos oráculos. Minha abordagem é
-            intuitiva, sensível e ética. Trabalho com o Baralho Cigano, Tarô
-            Egípcio e Tarô de Osho, ferramentas que me permitem oferecer
-            leituras profundas e personalizadas. Cada consulta é uma
-            oportunidade para iluminar caminhos, esclarecer dúvidas e trazer
-            autoconhecimento. Acredito que o Tarot não prevê o futuro, mas sim
-            nos guia para tomar as melhores decisões. Meu objetivo é que, ao
-            final de cada sessão, você se sinta mais seguro(a), confiante e
-            preparado(a) para seguir em frente com mais leveza e sabedoria.
-          </p>
-          <p>
-            Se você busca respostas, um novo olhar sobre sua jornada ou apenas
-            um momento de conexão consigo mesmo, estou aqui para te ajudar.
+        <div
+          class="self-center text-md font-light md:text-2xl quem-sou-eu__conteudo"
+        >
+          <p class="max-w-[370px]">
+            Sou Thayane Silvestri, taróloga e oraculista à frente da Iluminar
+            Oráculos. Acredito no poder do autoconhecimento e da espiritualidade
+            como caminhos de cura, direção e transformação. Com sensibilidade,
+            escuta e dedicação, ofereço atendimentos personalizados que ajudam a
+            encontrar clareza, propósito e escolhas mais conscientes.
           </p>
         </div>
       </div>
     </section>
 
     <figure>
-      <img src="./imgs//barra.png" alt="" />
+      <img src="./imgs/barra.png" alt="" />
     </figure>
 
+    <!-- Como funciona -->
+    <section
+      id="como-funciona"
+      class="max-w-7xl mx-auto scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-8 md:gap-12"
     >
+      <h2
+        class="price-title text-balance text-5xl sm:text-7xl font-[100] text-secondary text-center"
+      >
+        Como funciona ?
+      </h2>
+
+      <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <div class="flex flex-col justify-between">
+          <img class="size-96 self-center" src="./imgs/etica.png" alt="Ética" />
+          <div class="como-funciona__conteudo text-white text-center">
+            <h3 class="text-secondary text-3xl">Ética</h3>
+            <p class="mt-4 text-xl font-lato font-light">
+              Todas as leituras são conduzidas com respeito e confidencialidade
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <img
+            class="size-96 self-center"
+            src="./imgs/resposta-48h.png"
+            alt="Ética"
+          />
+          <div class="como-funciona__conteudo text-white text-center">
+            <h3 class="text-secondary text-3xl">Resposta em 48h úteis</h3>
+            <p class="mt-4 text-xl font-lato font-light">
+              A leitura é feita com cuidado, dedicação e entregue em no prazo
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <img
+            class="size-96 self-center"
+            src="./imgs/flexibilidade.png"
+            alt="Ética"
+          />
+          <div class="como-funciona__conteudo text-white text-center">
+            <h3 class="text-secondary text-3xl">Flexibilidade</h3>
+            <p class="mt-4 text-xl font-lato font-light">
+              Receba sua orientação pelo whatsapp e ouça no seu tempo
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section
+      id="contatos"
+      class="pb-48 max-w-7xl mx-auto scroll-mt-[88px] px-6 md:px-16 py-4 flex flex-col items-center gap-8 md:gap-12"
+    >
+      <h2
+        class="price-title text-balance text-5xl sm:text-7xl font-[100] text-secondary text-center"
+      >
+        Contatos
+      </h2>
+      <ul class="flex items-center gap-12">
+        <li class="hover:scale-90 transition-all duration-200">
+          <a href="http://wa.me/5548996922646" target="blank">
+            <img class="size-12" src="./imgs/whatsapp.png" alt="" />
+          </a>
+        </li>
+
+        <li class="hover:scale-90 transition-all duration-200">
+          <a href="https://www.instagram.com/iluminaroraculoss/" target="blank">
+            <img class="size-12" src="./imgs/instagram.png" alt="" />
+          </a>
+        </li>
+
+        <li class="hover:scale-90 transition-all duration-200">
+          <a href="https://www.youtube.com/@iluminaroraculos" target="blank">
+            <img class="size-12" src="./imgs/yotube.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
