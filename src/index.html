@@ -14,9 +14,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
-  <body
-    class="font-boston h-screen bg-primary space-y-24 md:space-y-32 lg:space-y-48"
-  >
+  <body class="font-boston bg-primary space-y-24 md:space-y-32 lg:space-y-48">
     <header
       class="max-h-[88px] backdrop-blur-md z-50 px-6 md:px-8 fixed w-full 2xl:px-12 flex items-center justify-between flex-col md:flex-row"
     >
@@ -64,28 +62,30 @@
       </nav>
     </header>
 
-    <main
-      id="main"
-      class="bg-[url(./imgs/fundo.png)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
-    >
-      <h1
-        id="titulo-principal"
-        class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
+    <main class="pt-24" id="main">
+      <div
+        class="relative overflow-hidden flex flex-col justify-center items-center px-6 md:px-8 md:pt-32 2xl:px-12"
       >
-        &#57409; poder das cartas,
-        <span class="block text-secondary">a luz da transformação</span>
-      </h1>
+        <img src="./imgs/fundo.png" class="absolute inset-0" alt="" />
+        <h1
+          id="titulo-principal"
+          class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
+        >
+          &#57409; poder das cartas,
+          <span class="block text-secondary">a luz da transformação</span>
+        </h1>
 
-      <figure
-        id="imagem-cartas"
-        class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
-      >
-        <img
-          src="./imgs/logotipo.png"
-          alt=""
-          class="object-cover h-[300px] md:h-[600px]"
-        />
-      </figure>
+        <figure
+          id="imagem-cartas"
+          class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
+        >
+          <img
+            src="./imgs/logotipo.png"
+            alt=""
+            class="object-cover h-[300px] md:h-[600px]"
+          />
+        </figure>
+      </div>
     </main>
 
     <!-- Tiragem -->
