@@ -8,7 +8,7 @@ menuMobile.addEventListener('click', () => {
 
   if (isOpen) {
     navMenu.classList.remove('translate-y-[-500px]')
-    navMenu.classList.add('translate-y-0', 'h-auto')
+    navMenu.classList.add('translate-y-0', 'h-auto', 'absolute', 'top-[72px]', 'bg-primary', 'w-full')
   }
   if (!isOpen) {
     navMenu.classList.remove('translate-y-0')

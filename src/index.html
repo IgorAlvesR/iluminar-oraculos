@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script type="module" src="js/index.js" defer></script>
+    <script defer src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
   <body
@@ -67,6 +69,7 @@
       class="bg-[url(./imgs/fundo.png)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center px-6 md:px-8 md:pt-60 2xl:px-12"
     >
       <h1
+        id="titulo-principal"
         class="text-balance text-4xl sm:text-7xl font-[100] text-white text-center"
       >
         &#57409; poder das cartas,
@@ -74,6 +77,7 @@
       </h1>
 
       <figure
+        id="imagem-cartas"
         class="max-h-[300px] md:max-h-[600px] overflow-hidden flex justify-center"
       >
         <img
